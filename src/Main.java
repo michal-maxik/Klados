@@ -1,16 +1,29 @@
 import java.util.Scanner;
 
 public class Main {
-    Scanner scanner=new Scanner(System.in);
+
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+     iPrehravac prehravace;
 
-                iPrehravac[] prehravace;
+        while(true){
+            System.out.print("Enter number 1 for count of all devices: ");
+            System.out.print("Enter number 2 for start playing music: ");
+            System.out.print("Enter number 3 for stop playing music: ");
+            System.out.print("Enter number 4 music choosen by your choice: ");
+            int choice = scanner.nextInt();
 
+            scanner.nextLine();
+            switch(choice) {
+                case 1:
+                    System.out.print("Zadejte index přehrávače: ");
+                    int index = scanner.nextInt();
+                    scanner.nextLine();
+                    prehravace[index].prehraj(true);
+                  break;
 
-
-
-
-
+            }
+        }
 
 
 
